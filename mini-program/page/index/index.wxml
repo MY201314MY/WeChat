@@ -1,0 +1,31 @@
+<view class='body'>
+  <view class='title' style='font-size:64rpx;margin-bottom:24rpx'>raspberryPi</view>
+  <view class='grade'>
+    <text style='padding-left:80rpx'>台灯:</text><switch id='LED' checked='{{light}}' style='padding-right:180rpx' bindchange='LED'/>
+    <text>龙门:</text><switch id='motor' bindchange='gate'/>
+  </view>
+  <view class='flex_wrap' style='height:180rpx; flex-direction:row'>
+    <view class='item bc_purple'>甲</view>
+    <view class='item bc_green'>乙</view>
+    <view class='item bc_pink'>丙</view>
+    <view class='item bc_orange'>丁</view>
+  </view>
+  <view style='margin-top:20rpx'>
+    <view class='center'>室内温湿度信息：</view>
+    <text class='center'>温度：{{temperature}}℃   湿度：{{humidty}}%R</text>
+  </view>
+  <view class='grade'>
+    <text class='center'>set the min or max of the speed:</text>
+    <slider min='-10' max='10' step='1' show-value='true' backgroundColor='yellow' block-color='blue' bindchange='sliderchange'></slider>
+    <text class='center'>The direction you set is: {{speed}} </text>
+  </view>
+  <view style='display:flex'>
+  <block>
+      <button id='living'  type='primary' bindtap='click'>客厅</button>
+      <button id='bedroom' type='default' bindtap='raspberrypi'>卧室</button>
+      <button id='kitchen' type='warn' bindtap='click'>厨房</button>
+      <button id='toilet' bindtap='click' bindtap='click'> 厕所</button>
+    </block>
+  </view>
+<text class='center'style='display:flex;font-size:36rpx;margin-top:128rpx;margin-bottom:72rpx'>Powered by Linux</text>
+</view>

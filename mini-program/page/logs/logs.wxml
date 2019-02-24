@@ -1,0 +1,38 @@
+<!-- logs.wxml -->
+<view class='page-section'>
+  <view class='center' style='font-size:48rpx'>Flask web server</view>
+   <view style='display:flex'>
+    <block>
+      <button id='up' class='item' style='margin-left:315rpx;margin-right:315rpx' type='primary' bindtap='direction'>上</button>
+    </block>
+  </view>
+  <view style='display:flex;margin-top:60rpx;margin-bottom:60rpx'>
+    <block>
+      <button id='left' class='item' type='primary' style='margin-left:120rpx;margin-right:0rpx' bindtap='direction'>左</button>
+      <button id='ok' class='item' type='primary' style='margin-left:75rpx' bindtap='direction'>OK</button>
+      <button id='right' class='item' type='primary' style='margin-right:120rpx' bindtap='direction'>右</button>
+    </block>
+  </view>
+  <view style='display:flex'>
+    <block>
+      <button id='down' class='item' type='primary' bindtap='direction'>下</button>
+    </block>
+  </view>
+  <view class="weui-cells__title">主题</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" placeholder-style="color:#5ABEDC" placeholder="iPhone"/>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">消息</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input"  maxlength="10"  placeholder-style="color:#F76260" placeholder="ON" bindinput="bindKeyInput"/>
+        </view>
+    </view>
+  </view>
+  <view style='display:flex'style="height:120rpx">
+    <button id='post'  type='primary' bindtap='click' style='width:300rpx;margin-top:128rpx;margin-:96rpx;' bindtap='post'>发送</button>
+  </view>
+</view>

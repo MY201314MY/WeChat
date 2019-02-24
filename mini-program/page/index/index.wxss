@@ -1,0 +1,72 @@
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 48rpx;
+}
+.button{
+  width: 150rpx;
+}
+
+.grade{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.swipper{
+  height: 240rpx;
+}
+.desc{
+  background-color: pink; 
+  color: yellow;                
+  font-size: 32rpx;
+  padding: 10px;
+  height: 40px;
+}
+
+.flex_wrap{
+  display: flex;
+  background-color: lightgreen;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 187.5rpx;
+  height: 180rpx;
+  border: solid 1px green;
+}
+
+.swiper_item{
+  height: 320rpx
+}
+
+.scroll_item{
+  height: 320rpx
+}
+
+.read{
+  background-color: lightblue
+}
+.bc_purple{
+  background-color: palevioletred;
+}
+
+.bc_green{
+  background-color: greenyellow;
+}
+
+.bc_pink{
+  background-color: brown;
+}
+
+.bc_orange{
+  background-color: orange;
+}

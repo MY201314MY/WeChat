@@ -1,0 +1,24 @@
+/* page/logs/logs.wxss */
+@import "../lib/weui.wxss";
+.page-section{
+  margin-bottom: 20rpx;
+  background-color: #fafaf2
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.canvas{
+  width: 640rpx;
+  height: 640rpx;
+  background-color:rgb(174, 238, 250);
+  border: 2rpx solid black;
+}
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120rpx;
+  height: 120rpx;
+}
